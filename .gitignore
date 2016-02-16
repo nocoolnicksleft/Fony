@@ -1,3 +1,7 @@
 # Ignore list 
 
 Thumbs.db
+*.bak
+*.tmp
+*.~*
+
