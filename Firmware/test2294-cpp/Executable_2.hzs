@@ -1,0 +1,136 @@
+<!DOCTYPE CrossStudio_for_ARM_Session_File>
+<session>
+ <Autos>
+  <Watches active="0" />
+ </Autos>
+ <Bookmarks/>
+ <Breakpoints>
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="D_Abort" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="3" mask="0" comparison="0" expression="FIQ" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="3" mask="0" comparison="0" expression="IRQ" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="P_Abort" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="3" mask="0" comparison="0" expression="Reset" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="3" mask="0" comparison="0" expression="SWI" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="ARM Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="Undef" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="BusFault" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="ExceptionEntryReturnFault" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="HardFault" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="MemManage" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="3" mask="0" comparison="0" expression="Reset" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="UsageFault_CheckingError" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="UsageFault_Coprocessor" filename="" />
+  <BreakpointListItem actiontype="0" chainFrom="" line="-1" defaultBreakType="true" length="0" triggertype="0" useHWbreakpoint="false" group="Cortex-M3 Exceptions" breakdatatype="5" value="0" name="unnamed" counter="0" state="2" mask="0" comparison="0" expression="UsageFault_StateError" filename="" />
+ </Breakpoints>
+ <ExecutionCountWindow/>
+ <Memory1>
+  <MemoryWindow autoEvaluate="1" addressText="0xE01FC0C4" numColumns="8" sizeText="4" dataSize="2" radix="2" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory4>
+ <MemoryUsageWindow>
+  <ProjectSessionItem path="Executable_2" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;efsl" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;efsl_driver" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;resources" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;Source Files" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;System Files" name="unnamed" />
+ </MemoryUsageWindow>
+ <Project>
+  <ProjectSessionItem path="Executable_2" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;efsl" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;efsl_driver" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;resources" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;Source Files" name="unnamed" />
+  <ProjectSessionItem path="Executable_2;Executable_2;System Files" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" visibleGroups="CPU - Current Mode" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" visibleGroups="CPU - Current Mode" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" visibleGroups="CPU - Current Mode" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="" binaryNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register4>
+ <SourceNavigatorWindow/>
+ <TraceWindow>
+  <Trace wrap="Yes" type="1" enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" >
+   <Watchpoint linenumber="54" radix="2" name="data" expression="data" filename="C:\LokaleDaten\ARMprojects\test2294-cpp\spi.cpp" />
+   <Watchpoint linenumber="404" radix="16" name="PCONP" expression="PCONP" filename="C:\LokaleDaten\ARMprojects\test2294-cpp\main.cpp" />
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" />
+ </Watch3>
+ <Watch4>
+  <Watches active="0" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="2" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\main.cpp" y="460" path="C:\LokaleDaten\ARMprojects\test2294-cpp\main.cpp" left="0" selected="0" name="unnamed" top="423" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\dcfwecker\rtc.c" y="0" path="C:\LokaleDaten\ARMprojects\dcfwecker\rtc.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\ringbuffer.h" y="4" path="C:\LokaleDaten\ARMprojects\test2294-cpp\ringbuffer.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="2" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\i2c_slave.cpp" y="29" path="C:\LokaleDaten\ARMprojects\test2294-cpp\i2c_slave.cpp" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\cnokialcd.cpp" y="94" path="C:\LokaleDaten\ARMprojects\test2294-cpp\cnokialcd.cpp" left="0" selected="0" name="unnamed" top="254" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="22" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\common.h" y="4" path="C:\LokaleDaten\ARMprojects\test2294-cpp\common.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="17" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\cnokialcd.h" y="91" path="C:\LokaleDaten\ARMprojects\test2294-cpp\cnokialcd.h" left="0" selected="0" name="unnamed" top="70" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\efsl\src\interfaces\lpc2000_spi.c" y="0" path="C:\LokaleDaten\ARMprojects\test2294-cpp\efsl\src\interfaces\lpc2000_spi.c" left="0" selected="0" name="unnamed" top="162" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="25" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\spi.cpp" y="77" path="C:\LokaleDaten\ARMprojects\test2294-cpp\spi.cpp" left="0" selected="0" name="unnamed" top="35" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\spi.h" y="5" path="C:\LokaleDaten\ARMprojects\test2294-cpp\spi.h" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\keyboard_dynamic.cpp" y="58" path="C:\LokaleDaten\ARMprojects\test2294-cpp\keyboard_dynamic.cpp" left="0" selected="0" name="unnamed" top="20" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="19" debugPath="C:\Programme\Rowley Associates Limited\CrossWorks for ARM 1.7\include\targets\LPC2294.h" y="3141" path="C:\Programme\Rowley Associates Limited\CrossWorks for ARM 1.7\include\targets\LPC2294.h" left="0" selected="0" name="unnamed" top="3117" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="21" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\Philips_LPC210X_Startup.s" y="19" path="C:\LokaleDaten\ARMprojects\test2294-cpp\Philips_LPC210X_Startup.s" left="0" selected="1" name="unnamed" top="50" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\LokaleDaten\ARMprojects\test2294-cpp\lcd_hd44780.cpp" y="49" path="C:\LokaleDaten\ARMprojects\test2294-cpp\lcd_hd44780.cpp" left="0" selected="0" name="unnamed" top="49" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="Executable_2" autoConnectTarget="/USB CrossConnect for ARM-RTCK" debugSearchFileMap="..\libmad-0.15.1b\minimad.c
+
+\cygdrive\c\Keil\ARM\GNU\Boards\Keil\MCB2130\libmad-0.15.1b\bit.c
+C:\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\bit.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\bit.c
+C:\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\bit.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\crt0.S
+
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\decoder.c
+\decoder.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\fixed.c
+\fixed.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\frame.c
+\frame.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\imdct_l_arm.S
+\imdct_l_arm.S
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\layer12.c
+\layer12.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\layer3.c
+\layer3.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\lpc_io.c
+C:\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\lpc_io.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\minimad.c
+C:\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\minimad.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\Philips_LPC210X_Startup.s
+
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\stream.c
+\stream.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\synth.c
+\synth.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\libmad-0.15.1b\timer.c
+\timer.c
+\cygdrive\c\Program Files\Rowley Associates Limited\CrossWorks for ARM 1.5\samples\Philips_LPC210X\Keil_MCB2140\MP3Player\ARM Flash Debug\Startup.s
+\Startup.s" fileDialogInitialDirectory="C:\LokaleDaten\ARMprojects\test2294-cpp" fileDialogDefaultFilter="*" autoConnectCapabilities="1407" debugSearchPath="" buildConfiguration="ARM Flash Debug" />
+</session>

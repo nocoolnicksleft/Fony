@@ -1,0 +1,36 @@
+<!DOCTYPE Linker_Placement_File>
+<Root name="FLASH Section Placement">
+  <MemorySegment name="FLASH">
+    <ProgramSection load="Yes" inputsections="*(.vectors .vectors.*)" name=".vectors"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="*(.init .init.*)" name=".init"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="*(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table)" name=".text"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="KEEP (*(SORT(.dtors.*))) KEEP (*(.dtors))" name=".dtors"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="KEEP (*(SORT(.ctors.*))) KEEP (*(.ctors))" name=".ctors"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="*(.rodata .rodata.* .gnu.linkonce.r.*)" name=".rodata"/>
+    <ProgramSection alignment="4" load="Yes" runin=".data_run" inputsections="*(.data .data.* .gnu.linkonce.d.*)" name=".data"/>
+    <ProgramSection alignment="4" load="Yes" runin=".fast_run" inputsections="*(.fast .fast.*)" name=".fast"/>
+  </MemorySegment>
+  <MemorySegment name="SRAM">
+    <ProgramSection name=".vectors_ram" size="0x0000003C" alignment="" load="No"/>
+    <ProgramSection alignment="4" load="No" name=".data_run"/>
+    <ProgramSection alignment="4" load="No" inputsections="*(.bss .bss.* .gnu.linkonce.b.*) *(COMMON)" name=".bss"/>
+    <ProgramSection alignment="4" load="No" inputsections="*(.non_init .non_init.*)" name=".non_init"/>
+    <ProgramSection alignment="4" size="__STACKSIZE__" load="No" name=".stack"/>
+    <ProgramSection alignment="4" size="__STACKSIZE_IRQ__" load="No" name=".stack_irq"/>
+    <ProgramSection alignment="4" size="__STACKSIZE_FIQ__" load="No" name=".stack_fiq"/>
+    <ProgramSection alignment="4" size="__STACKSIZE_SVC__" load="No" name=".stack_svc"/>
+    <ProgramSection alignment="4" size="__STACKSIZE_ABT__" load="No" name=".stack_abt"/>
+    <ProgramSection alignment="4" size="__STACKSIZE_UND__" load="No" name=".stack_und"/>
+    <ProgramSection alignment="4" load="No" name=".fast_run"/>
+  </MemorySegment>
+  <MemorySegment name="External FLASH">
+    <ProgramSection alignment="4" load="Yes" inputsections="*(.text2 .text2.*)" name=".text2"/>
+    <ProgramSection alignment="4" load="Yes" inputsections="*(.rodata2 .rodata2.*)" name=".rodata2"/>
+    <ProgramSection alignment="4" load="Yes" runin=".data2_run" inputsections="*(.data2 .data2.*)" name=".data2"/>
+  </MemorySegment>
+  <MemorySegment name="External SRAM">
+    <ProgramSection alignment="4" load="No" name=".data2_run"/>
+    <ProgramSection alignment="4" load="No" inputsections="*(.bss2 .bss2.*)" name=".bss2"/>
+    <ProgramSection alignment="4" size="__HEAPSIZE__" load="No" name=".heap"/>
+  </MemorySegment>
+</Root>

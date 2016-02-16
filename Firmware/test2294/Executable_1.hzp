@@ -1,0 +1,61 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="Executable_1" version="1">
+  <project Name="Executable_1">
+    <configuration Name="Common" Target="LPC2294" arm_architecture="v4T" arm_core_type="ARM7TDMI-S" arm_simulator_memory_simulation_filename="$(StudioDir)/targets/Philips_LPC210X/LPC2000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC22;0x40000;0x4000;0x400000;0x100000;0x0;0x0" arm_target_debug_interface_type="ARM7TDI" arm_target_loader_parameter="12000000" gcc_entry_point="reset_handler" link_include_startup_code="No" linker_additional_files="$(StudioDir)/lib/liblpc2000$(LibExt)$(LIB)" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2294_MemoryMap.xml" oscillator_frequency="12MHz" project_directory="" project_type="Executable" property_groups_file_path="$(StudioDir)/targets/Philips_LPC210X/propertyGroups22xx.xml"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/sram_placement.xml" target_reset_script="SRAMReset()"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(StudioDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_section_placement_file="$(StudioDir)/targets/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file Name="main.c" file_name="main.c"/>
+      <file Name="lcd_HD44780.c" file_name="lcd_HD44780.c"/>
+      <file Name="lpc_io.c" file_name="lpc_io.c"/>
+    </folder>
+    <folder Name="System Files">
+      <file Name="crt0.s" file_name="$(StudioDir)/source/crt0.s"/>
+      <file Name="LPC210x.c" file_name="$(StudioDir)/targets/Philips_LPC210X/LPC210x.c"/>
+      <file Name="Philips_LPC210X_Target.js" file_name="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC210X_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file Name="VIC.c" file_name="$(StudioDir)/targets/Philips_LPC210X/VIC.c"/>
+      <file Name="VIC_irq_handler.s" file_name="$(StudioDir)/targets/Philips_LPC210X/VIC_irq_handler.s"/>
+      <file Name="Philips_LPC210X_Startup.s" file_name="Philips_LPC210X_Startup.s"/>
+    </folder>
+    <configuration Name="ARM Flash Debug" arm_linker_irq_stack_size="512" arm_linker_svc_stack_size="256" arm_linker_und_stack_size="256" arm_target_loader_parameter="14745600" c_user_include_directories="$(ProjectDir);$(ProjectDir)/efsl/conf;$(ProjectDir)/efsl/inc." oscillator_frequency="14.7456MHz"/>
+    <folder Name="efsl">
+      <file Name="debug.c" file_name="efsl/src/debug.c"/>
+      <file Name="dir.c" file_name="efsl/src/dir.c"/>
+      <file Name="disc.c" file_name="efsl/src/disc.c"/>
+      <file Name="efs.c" file_name="efsl/src/efs.c"/>
+      <file Name="extract.c" file_name="efsl/src/extract.c"/>
+      <file Name="fat.c" file_name="efsl/src/fat.c"/>
+      <file Name="file.c" file_name="efsl/src/file.c"/>
+      <file Name="fs.c" file_name="efsl/src/fs.c"/>
+      <file Name="ioman.c" file_name="efsl/src/ioman.c"/>
+      <file Name="ls.c" file_name="efsl/src/ls.c"/>
+      <file Name="mkfs.c" file_name="efsl/src/mkfs.c"/>
+      <file Name="partition.c" file_name="efsl/src/partition.c"/>
+      <file Name="plibc.c" file_name="efsl/src/plibc.c"/>
+      <file Name="time.c" file_name="efsl/src/time.c"/>
+      <file Name="ui.c" file_name="efsl/src/ui.c"/>
+    </folder>
+    <folder Name="efsl_driver">
+      <file Name="sd.c" file_name="efsl/src/interfaces/sd.c"/>
+      <file Name="lpc2000_spi.c" file_name="efsl/src/interfaces/lpc2000_spi.c"/>
+    </folder>
+    <folder Name="lcd">
+      <file Name="pcf8833u8_lcd.c" file_name="pcf8833u8_lcd.c"/>
+      <file Name="test.c" file_name="test.c"/>
+      <file Name="Bitmap.c" file_name="Bitmap.c"/>
+      <file Name="fonts.c" file_name="fonts.c"/>
+    </folder>
+  </project>
+  <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
+  <configuration Name="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM RAM Release" inherited_configurations="ARM;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM Flash Debug" inherited_configurations="ARM;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+</solution>

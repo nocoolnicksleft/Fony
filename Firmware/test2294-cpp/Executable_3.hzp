@@ -1,0 +1,50 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="Executable_3" version="1">
+  <project Name="Executable_3">
+    <configuration Name="Common" arm_simulator_memory_simulation_filename="$(StudioDir)/targets/Philips_LPC210X/LPC2000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC22;0x20000;0x4000;0x400000;0x100000;0x0;0x0" arm_target_loader_parameter="14745600" c_preprocessor_definitions="__TARGET_PROCESSOR=LPC2294;OSCILLATOR_CLOCK_FREQUENCY=14745600" gcc_entry_point="reset_handler" link_include_startup_code="No" linker_additional_files="$(StudioDir)/lib/liblpc2000$(LibExt)$(LIB)" project_directory="" project_type="Executable"/>
+    <configuration Name="RAM" target_reset_script="RAMReset()"/>
+    <configuration Name="Flash" arm_target_flash_loader_file_path="$(StudioDir)/targets/Olimex_LPC_E2294/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file Name="main3.cpp" file_name="main3.cpp">
+        <configuration Name="ARM Flash Debug" default_code_section=".text2" default_const_section=".rodata2" default_data_section=".data2" default_vector_section=".vectors"/>
+      </file>
+    </folder>
+    <folder Name="System Files">
+      <file Name="crt0.s" file_name="$(StudioDir)/source/crt0.s">
+        <configuration Name="Common" c_preprocessor_definitions="INITIALIZE_SECONDARY_SECTIONS"/>
+      </file>
+      <file Name="Philips_LPC210X_Startup.s" file_name="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC210X_Startup.s">
+        <configuration Name="Common" c_preprocessor_definitions="PINSEL2_VAL=0x0F000924;BCFG0_VAL=0x1000348F;BCFG1_VAL=0x2000040F"/>
+      </file>
+      <file Name="LPC_E2294_MemoryMap.xml" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/LPC_E2294_MemoryMap.xml"/>
+      <file Name="ram_placement.xml" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/ram_placement.xml">
+        <configuration Name="Flash" build_exclude_from_build="Yes"/>
+      </file>
+      <file Name="flash_placement.xml" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/flash_placement.xml">
+        <configuration Name="RAM" build_exclude_from_build="Yes"/>
+      </file>
+      <file Name="LPC_E2294_Target.js" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/LPC_E2294_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file Name="VIC.c" file_name="$(StudioDir)/targets/Philips_LPC210X/VIC.c"/>
+      <file Name="VIC_irq_handler.s" file_name="$(StudioDir)/targets/Philips_LPC210X/VIC_irq_handler.s"/>
+      <file Name="LPC210x.c" file_name="$(StudioDir)/targets/Philips_LPC210X/LPC210x.c"/>
+      <file Name="Olimex_LPC_E22x4.c" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/Olimex_LPC_E22x4.c"/>
+    </folder>
+  </project>
+  <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
+  <configuration Name="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM RAM Release" inherited_configurations="ARM;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB RAM Debug" inherited_configurations="THUMB;RAM;Debug"/>
+  <configuration Name="THUMB" arm_instruction_set="THUMB" arm_library_instruction_set="THUMB" c_preprocessor_definitions="__THUMB" hidden="Yes"/>
+  <configuration Name="THUMB RAM Release" inherited_configurations="THUMB;RAM;Release"/>
+  <configuration Name="ARM Flash Debug" inherited_configurations="ARM;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+  <configuration Name="THUMB Flash Debug" inherited_configurations="THUMB;Flash;Debug"/>
+  <configuration Name="THUMB Flash Release" inherited_configurations="THUMB;Flash;Release"/>
+</solution>

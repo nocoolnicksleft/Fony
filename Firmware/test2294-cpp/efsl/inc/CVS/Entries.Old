@@ -1,0 +1,21 @@
+D/flowchart////
+D/interfaces////
+/debug.h/0/Initial debug.h//
+/dir.h/0/Initial dir.h//
+/disc.h/0/Initial disc.h//
+/efs.h/0/Initial efs.h//
+/error.h/0/Initial error.h//
+/extract.h/0/Initial extract.h//
+/fat.h/0/Initial fat.h//
+/file.h/0/Initial file.h//
+/fs.h/0/Initial fs.h//
+/interface.h/0/Initial interface.h//
+/ioman.h/0/Initial ioman.h//
+/ioman_v2.h/0/Initial ioman_v2.h//
+/ls.h/0/Initial ls.h//
+/mkfs.h/0/Initial mkfs.h//
+/partition.h/0/Initial partition.h//
+/plibc.h/0/Initial plibc.h//
+/time.h/0/Initial time.h//
+/types.h/0/Initial types.h//
+/ui.h/0/Initial ui.h//

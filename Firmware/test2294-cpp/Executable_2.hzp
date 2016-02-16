@@ -1,0 +1,85 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="Executable_2" version="1">
+  <project Name="Executable_2" file_name="">
+    <configuration Name="Common" Target="LPC2294" arm_architecture="v4T" arm_core_type="ARM7TDMI-S" arm_simulator_memory_simulation_filename="$(StudioDir)/targets/Philips_LPC210X/LPC2000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC22;0x40000;0x4000;0x400000;0x100000;0x0;0x0" arm_target_debug_interface_type="ARM7TDI" arm_target_loader_parameter="14745600" gcc_entry_point="reset_handler" link_include_startup_code="No" linker_additional_files="$(StudioDir)/lib/liblpc2000$(LibExt)$(LIB)" linker_memory_map_file="$(StudioDir)/targets/Philips_LPC210X/Philips_LPC2294_MemoryMap.xml" oscillator_frequency="14.7456MHz" project_directory="" project_type="Executable" property_groups_file_path="$(StudioDir)/targets/Philips_LPC210X/propertyGroups22xx.xml"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/sram_placement.xml" target_reset_script="SRAMReset()"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(StudioDir)/targets/Philips_LPC210X/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_section_placement_file="$(StudioDir)/targets/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file Name="main.cpp" file_name="main.cpp"/>
+      <file Name="lcd_hd44780.cpp" file_name="lcd_hd44780.cpp"/>
+      <file Name="commandlinehandler.cpp" file_name="commandlinehandler.cpp"/>
+      <file Name="uart.cpp" file_name="uart.cpp"/>
+      <file Name="tick.cpp" file_name="tick.cpp"/>
+      <file Name="keyboard_dynamic.cpp" file_name="keyboard_dynamic.cpp"/>
+      <file Name="i2c_slave.cpp" file_name="i2c_slave.cpp"/>
+      <file Name="rectangle.cpp" file_name="rectangle.cpp"/>
+      <file Name="bitmap.cpp" file_name="bitmap.cpp"/>
+      <file Name="font.cpp" file_name="font.cpp"/>
+      <file Name="cnokialcd.cpp" file_name="cnokialcd.cpp"/>
+      <file Name="common.cpp" file_name="common.cpp"/>
+      <file Name="spi.cpp" file_name="spi.cpp"/>
+      <file Name="spi.h" file_name="spi.h"/>
+    </folder>
+    <folder Name="System Files">
+      <file Name="crt0.s" file_name="$(StudioDir)/source/crt0.s"/>
+      <file Name="Philips_LPC210X_Startup.s" file_name="Philips_LPC210X_Startup.s">
+        <configuration Name="ARM Flash Debug" build_exclude_from_build="No"/>
+      </file>
+      <file Name="Philips_LPC210X_Target.js" file_name="Philips_LPC210X_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file Name="LPC_E2294_MemoryMap.xml" file_name="$(StudioDir)/targets/Olimex_LPC_E2294/LPC_E2294_MemoryMap.xml"/>
+      <file Name="flash_placement.xml" file_name="flash_placement.xml"/>
+    </folder>
+    <configuration Name="ARM Flash Debug" arm_linker_abt_stack_size="256" arm_linker_fiq_stack_size="1024" arm_linker_heap_size="8192" arm_linker_irq_stack_size="1024" arm_linker_stack_size="4096" arm_linker_svc_stack_size="256" arm_linker_und_stack_size="256" arm_long_calls="Yes" arm_target_flash_loader_file_path="$(StudioDir)/targets/Olimex_LPC_E2294/Release/Loader_rpc.elf" arm_use_gcc_libraries="Yes" build_remove_unused_symbols="Yes" c_preprocessor_definitions="INITIALIZE_SECONDARY_SECTIONS ; VECTORED_IRQ_INTERRUPTS ; STARTUP_FROM_RESET" c_user_include_directories="$(ProjectDir)/efsl/inc;$(ProjectDir)/efsl/conf;$(ProjectDir)/zlib;;$(ProjectDir)/libpng" link_include_standard_libraries="Yes" linker_additional_files="$(Configuration)/libpng.a" linker_memory_map_file="$(StudioDir)/targets/Olimex_LPC_E2294/LPC_E2294_MemoryMap.xml" linker_printf_fp_enabled="Yes" linker_section_placement_file="$(StudioDir)/targets/Olimex_LPC_E2294/flash_placement.xml"/>
+    <folder Name="efsl">
+      <file Name="debug.c" file_name="efsl/src/debug.c"/>
+      <file Name="dir.c" file_name="efsl/src/dir.c"/>
+      <file Name="disc.c" file_name="efsl/src/disc.c"/>
+      <file Name="efs.c" file_name="efsl/src/efs.c"/>
+      <file Name="extract.c" file_name="efsl/src/extract.c"/>
+      <file Name="fat.c" file_name="efsl/src/fat.c"/>
+      <file Name="file.c" file_name="efsl/src/file.c"/>
+      <file Name="fs.c" file_name="efsl/src/fs.c"/>
+      <file Name="ioman.c" file_name="efsl/src/ioman.c"/>
+      <file Name="ls.c" file_name="efsl/src/ls.c"/>
+      <file Name="mkfs.c" file_name="efsl/src/mkfs.c"/>
+      <file Name="partition.c" file_name="efsl/src/partition.c"/>
+      <file Name="plibc.c" file_name="efsl/src/plibc.c"/>
+      <file Name="time.c" file_name="efsl/src/time.c"/>
+      <file Name="ui.c" file_name="efsl/src/ui.c"/>
+      <configuration Name="ARM Flash Debug" build_remove_unused_symbols="No" default_code_section=".text2"/>
+    </folder>
+    <folder Name="efsl_driver">
+      <file Name="lpc2000_spi.c" file_name="efsl/src/interfaces/lpc2000_spi.c"/>
+      <file Name="sd.c" file_name="efsl/src/interfaces/sd.c"/>
+      <configuration Name="ARM Flash Debug" default_code_section=".text2"/>
+    </folder>
+    <configuration Name="ARM RAM Debug" c_user_include_directories="$(ProjectDir)/efsl/inc;$(ProjectDir)/efsl/conf." linker_memory_map_file="$(ProjectDir)/LPC_E2294_MemoryMap.xml" linker_section_placement_file="$(ProjectDir)/sram_placement.xml"/>
+    <folder Name="resources">
+      <file Name="bigpinky_kitzel_0_0.c" file_name="bigpinky_kitzel_0_0.c"/>
+      <file Name="ComicSansMS10.c" file_name="ComicSansMS10.c"/>
+      <file Name="ComicSansMS10_width.c" file_name="ComicSansMS10_width.c"/>
+    </folder>
+  </project>
+  <configuration Name="ARM RAM Debug" inherited_configurations="ARM;RAM;Debug"/>
+  <configuration Name="ARM" arm_instruction_set="ARM" arm_library_instruction_set="ARM" c_preprocessor_definitions="__ARM" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="ARM RAM Release" inherited_configurations="ARM;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB RAM Debug" inherited_configurations="THUMB;RAM;Debug"/>
+  <configuration Name="THUMB" arm_instruction_set="THUMB" arm_library_instruction_set="THUMB" c_preprocessor_definitions="__THUMB" hidden="Yes"/>
+  <configuration Name="THUMB RAM Release" inherited_configurations="THUMB;RAM;Release"/>
+  <configuration Name="ARM Flash Debug" inherited_configurations="ARM;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="ARM Flash Release" inherited_configurations="ARM;Flash;Release"/>
+  <configuration Name="THUMB Flash Debug" inherited_configurations="THUMB;Flash;Debug"/>
+  <configuration Name="THUMB Flash Release" inherited_configurations="THUMB;Flash;Release"/>
+  <configuration Name="V4T ARM LE Debug" inherited_configurations="V4T;ARM;I;LE;Debug"/>
+  <configuration Name="V4T" arm_architecture="v4T" c_preprocessor_definitions="__ARCH_V4T" hidden="Yes"/>
+  <configuration Name="I" arm_interwork="Yes" c_preprocessor_definitions="__INTERWORK" hidden="Yes"/>
+  <configuration Name="LE" arm_endian="Little" c_preprocessor_definitions="__LITTLE_ENDIAN" hidden="Yes"/>
+  <configuration Name="V4T ARM LE Release" inherited_configurations="V4T;ARM;I;LE;Release"/>
+</solution>
